@@ -1,0 +1,73 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Survey Form from (384)</h1>
+    <p id="description">Please fill up the following form.</p>
+    
+    <form id="survey-form">
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+
+        <label for="number" id="number-label">Age:</label>
+        <input type="number" id="number" name="age" min="1" max="100" placeholder="Your age" required>
+
+        <label for="dropdown">Favorite Programming Language:</label>
+        <select id="dropdown" name="language">
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="csharp">C#</option>
+            <option value="c">C</option>
+            <option value="c plus plus">C++</option>
+            
+        </select>
+
+        <fieldset>
+            <legend>Which frameworks are you familiar with?</legend>
+            <label>
+                <input type="radio" name="framework" value="react"> React
+            </label>
+            <label>
+                <input type="radio" name="framework" value="vue"> Vue
+            </label>
+            <label>
+                <input type="radio" name="framework" value="angular"> Angular
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>What tools do you use? (Check all that apply)</legend>
+            <label>
+                <input type="checkbox" name="tools" value="git"> Git
+            </label>
+            <label>
+                <input type="checkbox" name="tools" value="docker"> Docker
+            </label>
+            <label>
+                <input type="checkbox" name="tools" value="aws"> AWS
+            </label>
+        </fieldset>
+
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" placeholder="Your comments here"></textarea>
+
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+</html>
+
+
+
+
+
